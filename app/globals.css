@@ -1,24 +1,32 @@
 @import "tailwindcss";
 
 @theme {
-  --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
-  --font-mono: var(--font-geist-mono), ui-monospace, monospace;
-  --color-background: oklch(1 0 0);
-  --color-foreground: oklch(0.145 0 0);
-  --color-card: oklch(1 0 0);
-  --color-card-foreground: oklch(0.145 0 0);
-  --color-primary: oklch(0.205 0 0);
-  --color-primary-foreground: oklch(0.985 0 0);
-  --color-secondary: oklch(0.97 0 0);
-  --color-secondary-foreground: oklch(0.205 0 0);
-  --color-muted: oklch(0.97 0 0);
-  --color-muted-foreground: oklch(0.556 0 0);
-  --color-accent: oklch(0.97 0 0);
-  --color-accent-foreground: oklch(0.205 0 0);
+  --font-sans: 'Source Sans Pro', ui-sans-serif, system-ui, sans-serif;
+  --font-serif: 'Playfair Display', ui-serif, Georgia, serif;
+  --font-mono: ui-monospace, monospace;
+
+  --color-cream: #FAF7F2;
+  --color-sand: #D4C4B9;
+  --color-coffee: #5C4A42;
+  --color-charcoal: #3E3E3E;
+  --color-mocha: #8B7355;
+
+  --color-background: #FAF7F2;
+  --color-foreground: #3E3E3E;
+  --color-card: #FFFFFF;
+  --color-card-foreground: #3E3E3E;
+  --color-primary: #5C4A42;
+  --color-primary-foreground: #FAF7F2;
+  --color-secondary: #D4C4B9;
+  --color-secondary-foreground: #5C4A42;
+  --color-muted: #D4C4B9;
+  --color-muted-foreground: #8B7355;
+  --color-accent: #8B7355;
+  --color-accent-foreground: #FAF7F2;
   --color-destructive: oklch(0.577 0.245 27.325);
-  --color-border: oklch(0.922 0 0);
-  --color-input: oklch(0.922 0 0);
-  --color-ring: oklch(0.708 0 0);
+  --color-border: #D4C4B9;
+  --color-input: #D4C4B9;
+  --color-ring: #8B7355;
   --radius: 0.5rem;
 }
 
@@ -29,5 +37,13 @@
   body {
     background-color: var(--color-background);
     color: var(--color-foreground);
+    font-family: var(--font-sans);
   }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-serif);
+  }
+}
+
+html {
+  scroll-behavior: smooth;
 }
