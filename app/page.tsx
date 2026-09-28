@@ -340,23 +340,35 @@ export default function HomePage() {
       <section id="galeria" className="py-20 bg-cream">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="font-serif text-3xl sm:text-4xl font-bold text-coffee mb-4">Nuestro Espacio</h2>
+            <h2 className="font-serif text-3xl sm:text-4xl font-bold text-coffee mb-4">Galería</h2>
             <p className="text-mocha max-w-2xl mx-auto">
-              Un ambiente diseñado para disfrutar, trabajar y conectar con la cultura del café.
+              Descubre nuestro espacio, nuestros productos y la pasión que ponemos en cada detalle.
             </p>
           </div>
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
-            <div className="col-span-2 row-span-2 rounded-2xl overflow-hidden bg-gradient-to-br from-coffee to-mocha aspect-square flex items-center justify-center">
-              <div className="text-center text-cream p-8">
-                <Coffee className="w-16 h-16 mx-auto mb-4 opacity-80" />
-                <p className="font-serif text-2xl">Ambiente acogedor</p>
-                <p className="text-sand text-sm mt-2">Diseñado para tu comodidad</p>
+            <div className="col-span-2 row-span-2 rounded-2xl overflow-hidden relative aspect-square">
+              <Image
+                src="/images/feature.png"
+                alt="Interior acogedor de Café Aroma"
+                fill
+                className="object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-coffee/60 to-transparent" />
+              <div className="absolute bottom-0 left-0 right-0 p-6 text-cream">
+                <p className="font-serif text-2xl">Nuestro Interior</p>
+                <p className="text-sand text-sm mt-1">Un espacio diseñado para ti</p>
               </div>
             </div>
-            <div className="rounded-2xl overflow-hidden bg-gradient-to-br from-sand to-cream aspect-square flex items-center justify-center">
-              <div className="text-center text-coffee p-4">
-                <Cake className="w-10 h-10 mx-auto mb-2" />
-                <p className="font-serif text-lg">Pastelería</p>
+            <div className="rounded-2xl overflow-hidden relative aspect-square">
+              <Image
+                src="/images/hero.png"
+                alt="Café de especialidad preparado artesanalmente"
+                fill
+                className="object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-coffee/50 to-transparent" />
+              <div className="absolute bottom-0 left-0 right-0 p-4 text-cream">
+                <p className="font-serif text-lg">Café Artesanal</p>
               </div>
             </div>
             <div className="rounded-2xl overflow-hidden bg-gradient-to-br from-mocha to-coffee aspect-square flex items-center justify-center">
@@ -365,16 +377,16 @@ export default function HomePage() {
                 <p className="font-serif text-lg">Latte Art</p>
               </div>
             </div>
-            <div className="rounded-2xl overflow-hidden bg-gradient-to-br from-cream to-sand aspect-square flex items-center justify-center">
+            <div className="rounded-2xl overflow-hidden bg-gradient-to-br from-sand to-cream aspect-square flex items-center justify-center">
               <div className="text-center text-coffee p-4">
-                <Sandwich className="w-10 h-10 mx-auto mb-2" />
-                <p className="font-serif text-lg">Cocina</p>
+                <Cake className="w-10 h-10 mx-auto mb-2" />
+                <p className="font-serif text-lg">Pastelería</p>
               </div>
             </div>
             <div className="rounded-2xl overflow-hidden bg-gradient-to-br from-coffee/80 to-charcoal aspect-square flex items-center justify-center">
               <div className="text-center text-cream p-4">
-                <Star className="w-10 h-10 mx-auto mb-2" />
-                <p className="font-serif text-lg">Terraza</p>
+                <Sandwich className="w-10 h-10 mx-auto mb-2" />
+                <p className="font-serif text-lg">Cocina Fresca</p>
               </div>
             </div>
           </div>
