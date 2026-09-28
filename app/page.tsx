@@ -202,12 +202,21 @@ export default function HomePage() {
               <p className="text-lg sm:text-xl text-mocha mb-8 max-w-xl mx-auto lg:mx-0">
                 Granos de origen único, tostados artesanalmente en nuestro espacio en el corazón de la ciudad.
               </p>
-              <Button
-                asChild
-                className="bg-coffee text-cream hover:bg-coffee/90 text-lg px-8 py-6 rounded-full"
-              >
-                <a href="#menu">Explora nuestro menú</a>
-              </Button>
+              <div className="flex flex-wrap gap-4 justify-center lg:justify-start">
+                <Button
+                  asChild
+                  className="bg-coffee text-cream hover:bg-coffee/90 text-lg px-8 py-6 rounded-full"
+                >
+                  <a href="#contacto">Reserva tu mesa</a>
+                </Button>
+                <Button
+                  asChild
+                  variant="outline"
+                  className="border-coffee text-coffee hover:bg-coffee/10 text-lg px-8 py-6 rounded-full"
+                >
+                  <a href="#menu">Ver menú</a>
+                </Button>
+              </div>
             </div>
             <div className="order-1 lg:order-2 relative">
               <div className="aspect-square max-w-lg mx-auto relative rounded-3xl overflow-hidden shadow-2xl">
